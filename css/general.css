@@ -1,0 +1,37 @@
+/* text align */
+.text-center {
+  text-align: center;
+}
+
+/* font weight */
+.text-bold {
+  font-weight: bold;
+}
+.text-semi-bold {
+  font-weight: 500;
+}
+.text-light {
+  font-weight: lighter;
+}
+.text-normal {
+  font-weight: normal;
+}
+
+/* font color */
+.text-binus {
+  color: #3CAFE0;
+}
+.text-grey {
+  color: #5E5E5E;
+}
+.text-light-grey {
+  color: #00000080;
+}
+.text-white {
+  color: #FFFFFF;
+}
+
+/* text decoration */
+.text-decoration-none {
+  text-decoration: none;
+}
