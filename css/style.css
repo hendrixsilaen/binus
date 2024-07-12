@@ -28,10 +28,30 @@ a.text-white:hover {
   background-color: #0D0D0D;
   padding: 10px;
   justify-content: end;
+
+  .btn-search {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .input-search {
+    display: none;
+    background-color: #0D0D0D;
+    border: none;
+    border-bottom: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    margin-left: 5px;
+
+    &.active {
+      display: block;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
-.btn-search {
-  color: #FFFFFF;
-}
+
 .logo-header {
   display: flex;
   justify-content: start;
@@ -52,17 +72,23 @@ a.text-white:hover {
   margin-bottom: 32px;
 }
 
-.caraousel {
+.carousel {
   position: relative;
   margin-bottom: 32px;
 
-  .caraousel-item {
+  .carousel-item {
     width: 100%;
+    display: none;
+    transition: display 0.5s ease-in-out;
+
+    &.active {
+      display: block;
+    }
   }
 
   .btn-next {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 24px);
     right: 10px;
 
     img {
@@ -72,7 +98,7 @@ a.text-white:hover {
 
   .btn-prev {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 24px);
     left: 10px;
 
     img {
@@ -167,10 +193,14 @@ a.text-white:hover {
     justify-content: center;
     border-bottom: solid 1px #E5E5E5;
 
-    .active {
-      font-weight: bold;
-      color: #F28901;
-      border-bottom: solid 2px #F28901;      
+    .partnership-tab-item {
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+        color: #F28901;
+        border-bottom: solid 2px #F28901;      
+      }
     }
   }
 
